@@ -7,11 +7,11 @@ import java.util.Scanner;
  */
 public class Util {
 
+    static Scanner in = new Scanner(System.in);
+
     public static String askInputString(String message){
-        Scanner in = new Scanner(System.in);
         System.out.print(message);
         String res= in.next();
-        in.close();
         return res;
     }
 }
