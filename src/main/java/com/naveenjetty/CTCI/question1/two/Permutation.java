@@ -17,6 +17,7 @@ public class Permutation {
     }
 
     private static boolean areAnagrams(String s1, String s2) {
+        if (s1.length()==s2.length()) return false;
         int[] charCounts = new int[128];
         for (int i:s1.toCharArray()){
             charCounts[i]++;

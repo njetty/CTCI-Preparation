@@ -11,7 +11,7 @@ public class Util {
 
     public static String askInputString(String message){
         System.out.print(message);
-        String res= in.next();
+        String res= in.nextLine();
         return res;
     }
 }
