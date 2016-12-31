@@ -27,15 +27,17 @@ public class PalindromePermutation {
         for (int i = 0; i < charCounts.length;i++){
             if (charCounts[i]%2==1){
                 oddCount ++;
+                if (oddCount >1) return false;
             }
         }
+        return true;
 
-        if (len%2==1){
+        /*if (len%2==1){
             if (oddCount==1) return true;
             else return false;
         }else{
             if (oddCount==0) return true;
             else return false;
-        }
+        }*/
     }
 }
